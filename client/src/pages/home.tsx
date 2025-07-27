@@ -149,7 +149,7 @@ export default function Home() {
             {/* Coming Soon Title */}
             <div className="space-y-4">
               <motion.h1
-                className="text-4xl md:text-6xl lg:text-7xl text-white drop-shadow-lg mt-[0px] mb-[0px] ml-[9px] mr-[9px] pl-[137px] pr-[137px] pt-[-16px] pb-[-16px] font-extrabold"
+                className="text-4xl md:text-6xl lg:text-7xl text-gray-900 drop-shadow-lg font-extrabold"
                 animate={{ scale: [1, 1.02, 1] }}
                 transition={{ duration: 3, repeat: Infinity }}
               >
@@ -166,8 +166,8 @@ export default function Home() {
 
             {/* Description */}
             <div className="max-w-3xl mx-auto space-y-6">
-              <p className="text-white text-xl md:text-2xl font-semibold leading-relaxed drop-shadow-md">Prepárate para disfrutar de algo nuevo , las bebidas más frescas y deliciosas</p>
-              <p className="text-green-100 text-lg md:text-xl leading-relaxed">Jugos naturales, bebidas tropicales y mucho más te esperan en nuestra nueva aventura de sabores</p>
+              <p className="text-gray-900 text-xl md:text-2xl font-semibold leading-relaxed drop-shadow-md">Prepárate para disfrutar de algo nuevo, las bebidas más frescas y deliciosas</p>
+              <p className="text-gray-800 text-lg md:text-xl leading-relaxed">Jugos naturales, bebidas tropicales y mucho más te esperan en nuestra nueva aventura de sabores</p>
             </div>
 
             {/* Email Signup */}
@@ -177,7 +177,7 @@ export default function Home() {
                 whileHover={{ y: -5 }}
                 transition={{ duration: 0.3 }}
               >
-                <h3 className="text-white font-bold text-xl mb-4">
+                <h3 className="text-gray-900 font-bold text-xl mb-4">
                   <Bell className="inline mr-2 text-sip-orange" />
                   ¡Sé el primero en saberlo!
                 </h3>
@@ -186,7 +186,7 @@ export default function Home() {
                   <motion.div
                     initial={{ scale: 0.8, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
-                    className="text-white text-center py-4"
+                    className="text-gray-900 text-center py-4"
                   >
                     <div className="text-green-300 text-4xl mb-2">✓</div>
                     <p className="font-semibold">¡Listo! Te contactaremos pronto.</p>
@@ -248,8 +248,8 @@ export default function Home() {
                 whileHover={{ y: -5 }}
                 transition={{ duration: 0.3 }}
               >
-                <h2 className="text-white font-bold text-xl md:text-2xl mb-4">
-                  <Instagram className="inline mr-2 text-pink-400" />
+                <h2 className="text-gray-900 font-bold text-xl md:text-2xl mb-4">
+                  <Instagram className="inline mr-2 text-pink-600" />
                   ¡Síguenos!
                 </h2>
                 <div className="bg-white rounded-xl p-4 mb-4 shadow-inner">
@@ -259,10 +259,10 @@ export default function Home() {
                     className="w-full h-auto max-w-48 mx-auto rounded-lg"
                   />
                 </div>
-                <p className="text-green-100 text-base font-medium">
+                <p className="text-gray-700 text-base font-medium">
                   Escanea para seguir nuestras aventuras
                 </p>
-                <p className="text-white font-bold text-lg mt-2">
+                <p className="text-gray-900 font-bold text-lg mt-2">
                   @sipn_bite.cr
                 </p>
               </motion.div>
@@ -278,7 +278,7 @@ export default function Home() {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-center text-white font-black text-3xl md:text-4xl mb-12 drop-shadow-lg"
+              className="text-center text-gray-900 font-black text-3xl md:text-4xl mb-12 drop-shadow-lg"
             >
               ¡Mantente en contacto!
             </motion.h2>
@@ -296,8 +296,8 @@ export default function Home() {
                 <div className="text-pink-400 text-4xl mb-4">
                   <Instagram className="mx-auto" />
                 </div>
-                <h3 className="text-white font-bold text-xl mb-2">Síguenos</h3>
-                <p className="text-green-100">@sipn_bite.cr</p>
+                <h3 className="text-gray-900 font-bold text-xl mb-2">Síguenos</h3>
+                <p className="text-gray-700">@sipn_bite.cr</p>
               </motion.div>
 
               {/* Write to Us */}
@@ -312,8 +312,8 @@ export default function Home() {
                 <div className="text-sip-orange text-4xl mb-4">
                   <Mail className="mx-auto" />
                 </div>
-                <h3 className="text-white font-bold text-xl mb-2">Escríbenos</h3>
-                <p className="text-green-100">info@sipnbite.cr</p>
+                <h3 className="text-gray-900 font-bold text-xl mb-2">Escríbenos</h3>
+                <p className="text-gray-700">info@sipnbite.cr</p>
               </motion.div>
 
               {/* Call Us */}
@@ -328,8 +328,8 @@ export default function Home() {
                 <div className="text-green-300 text-4xl mb-4">
                   <Phone className="mx-auto" />
                 </div>
-                <h3 className="text-white font-bold text-xl mb-2">Llámanos</h3>
-                <p className="text-green-100">+506 8704-2019</p>
+                <h3 className="text-gray-900 font-bold text-xl mb-2">Llámanos</h3>
+                <p className="text-gray-700">+506 8704-2019</p>
               </motion.div>
 
               {/* Find Us */}
@@ -344,8 +344,8 @@ export default function Home() {
                 <div className="text-sip-red text-4xl mb-4">
                   <MapPin className="mx-auto" />
                 </div>
-                <h3 className="text-white font-bold text-xl mb-2">Encuéntranos</h3>
-                <p className="text-green-100">Heredia, Costa Rica</p>
+                <h3 className="text-gray-900 font-bold text-xl mb-2">Encuéntranos</h3>
+                <p className="text-gray-700">Heredia, Costa Rica</p>
               </motion.div>
             </div>
           </div>
@@ -361,7 +361,7 @@ export default function Home() {
               viewport={{ once: true }}
               className="space-y-4"
             >
-              <p className="text-white/80 text-lg">
+              <p className="text-gray-700 text-lg">
                 © 2025 Sip & Bite - Sabores que refrescan tu día
               </p>
               <div className="flex justify-center space-x-6 text-2xl">
