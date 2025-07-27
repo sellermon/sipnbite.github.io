@@ -118,7 +118,7 @@ export default function Home() {
       {/* Main Content */}
       <div className="relative z-10 sip-gradient min-h-screen">
         {/* Header */}
-        <header className="py-12 pt-20">
+        <header className="py-12 pt-32">
           <div className="container mx-auto px-4 text-center">
             <motion.div
               initial={{ scale: 0.8, opacity: 0 }}
@@ -244,25 +244,25 @@ export default function Home() {
               className="max-w-lg mx-auto text-center"
             >
               <motion.div
-                className="glass-effect rounded-3xl p-8 shadow-2xl hover-lift"
+                className="glass-effect rounded-3xl p-6 shadow-2xl hover-lift"
                 whileHover={{ y: -5 }}
                 transition={{ duration: 0.3 }}
               >
-                <h2 className="text-white font-bold text-2xl md:text-3xl mb-6">
-                  <Instagram className="inline mr-3 text-pink-400" />
+                <h2 className="text-white font-bold text-xl md:text-2xl mb-4">
+                  <Instagram className="inline mr-2 text-pink-400" />
                   ¡Síguenos!
                 </h2>
-                <div className="bg-white rounded-2xl p-6 mb-6 shadow-inner">
+                <div className="bg-white rounded-xl p-4 mb-4 shadow-inner">
                   <img 
                     src={instagramQR} 
                     alt="Instagram QR Code @sipn_bite.cr" 
-                    className="w-full h-auto max-w-xs mx-auto rounded-lg pt-[-3px] pb-[-3px] pl-[3px] pr-[3px] ml-[36px] mr-[36px] mt-[-24px] mb-[-24px]"
+                    className="w-full h-auto max-w-48 mx-auto rounded-lg"
                   />
                 </div>
-                <p className="text-green-100 text-lg font-medium">
+                <p className="text-green-100 text-base font-medium">
                   Escanea para seguir nuestras aventuras
                 </p>
-                <p className="text-white font-bold text-xl mt-2">
+                <p className="text-white font-bold text-lg mt-2">
                   @sipn_bite.cr
                 </p>
               </motion.div>

@@ -67,10 +67,11 @@
 @layer utilities {
   .sip-gradient {
     background: linear-gradient(135deg, 
-      rgba(72, 187, 120, 0.9) 0%, 
-      rgba(52, 168, 83, 0.85) 30%,
-      rgba(34, 150, 70, 0.8) 70%,
-      rgba(22, 130, 60, 0.75) 100%);
+      rgba(76, 175, 80, 0.85) 0%, 
+      rgba(255, 193, 7, 0.1) 20%,
+      rgba(255, 152, 0, 0.15) 40%,
+      rgba(244, 67, 54, 0.1) 60%,
+      rgba(76, 175, 80, 0.9) 100%);
     background-attachment: fixed;
     backdrop-filter: blur(2px);
   }
