@@ -245,7 +245,7 @@ export default function Home() {
               ¡Mantente en contacto!
             </motion.h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
               {/* Follow Us */}
               <motion.div
                 initial={{ y: 50, opacity: 0 }}
@@ -278,21 +278,7 @@ export default function Home() {
                 <p className="text-gray-700">info@sipnbite.cr</p>
               </motion.div>
 
-              {/* Call Us */}
-              <motion.div
-                initial={{ y: 50, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
-                viewport={{ once: true }}
-                className="glass-effect rounded-2xl p-6 text-center hover-lift"
-                whileHover={{ y: -5 }}
-              >
-                <div className="text-green-300 text-4xl mb-4">
-                  <Phone className="mx-auto" />
-                </div>
-                <h3 className="text-gray-900 font-bold text-xl mb-2">Llámanos</h3>
-                <p className="text-gray-700">+506 8704-2019</p>
-              </motion.div>
+
 
               {/* Find Us */}
               <motion.div
