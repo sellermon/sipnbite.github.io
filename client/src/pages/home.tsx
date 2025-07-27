@@ -255,7 +255,7 @@ export default function Home() {
                   <img 
                     src={instagramQR} 
                     alt="Instagram QR Code @sipn_bite.cr" 
-                    className="w-full h-auto max-w-xs mx-auto rounded-lg"
+                    className="w-full h-auto max-w-xs mx-auto rounded-lg pt-[-3px] pb-[-3px] pl-[3px] pr-[3px] ml-[36px] mr-[36px] mt-[-24px] mb-[-24px]"
                   />
                 </div>
                 <p className="text-green-100 text-lg font-medium">
