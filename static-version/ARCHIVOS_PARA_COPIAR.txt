@@ -1,0 +1,65 @@
+🚀 ARCHIVOS COMPLETOS PARA HOSTEAR TU PÁGINA WEB SIP & BITE
+
+📁 ESTRUCTURA DE ARCHIVOS:
+Tu carpeta debe contener exactamente estos 3 archivos:
+
+1. index.html (página principal)
+2. image1.png (logo de Sip & Bite) 
+3. image2.png (código QR de Instagram)
+
+========================================
+📋 PASOS PARA HOSTEAR:
+
+1. CREAR CARPETA:
+   - Crea una carpeta nueva llamada "sipbite-web"
+
+2. COPIAR ARCHIVOS:
+   - Copia el contenido del index.html de abajo
+   - Guarda las imágenes como image1.png e image2.png
+
+3. SUBIR A HOSTING:
+   - Netlify: Arrastra la carpeta completa
+   - Vercel: Conecta con GitHub y sube
+   - GitHub Pages: Crea repositorio y sube archivos
+
+========================================
+🌐 SERVICIOS DE HOSTING RECOMENDADOS:
+
+✅ NETLIFY (MÁS FÁCIL):
+   1. Ve a netlify.com
+   2. Arrastra tu carpeta a la zona de "Deploy"
+   3. ¡Listo en 2 minutos!
+
+✅ VERCEL:
+   1. Ve a vercel.com
+   2. Conecta GitHub
+   3. Sube archivos y despliega
+
+✅ GITHUB PAGES (GRATIS):
+   1. Crea repositorio en GitHub
+   2. Sube los 3 archivos
+   3. Activa Pages en configuración
+
+========================================
+📄 Tu página incluye:
+
+✓ Diseño responsive (móvil, tablet, desktop)
+✓ Animaciones del logo con efectos 3D
+✓ Frutas flotantes en el fondo
+✓ Formulario de suscripción de emails
+✓ Información de contacto completa
+✓ Enlaces a redes sociales
+✓ Código QR de Instagram
+✓ Optimizado para SEO
+
+========================================
+🎯 PRÓXIMOS PASOS:
+
+1. Copia el código HTML de abajo
+2. Guarda como "index.html"
+3. Asegúrate de tener las imágenes:
+   - image1.png (tu logo)
+   - image2.png (código QR)
+4. Sube todo a tu servicio de hosting preferido
+
+¡Tu página estará funcionando en minutos! 🚀
