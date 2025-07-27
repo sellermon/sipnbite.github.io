@@ -46,7 +46,7 @@ Tu carpeta debe contener exactamente estos 3 archivos:
 ✓ Diseño responsive (móvil, tablet, desktop)
 ✓ Animaciones del logo con efectos 3D
 ✓ Frutas flotantes en el fondo
-✓ Formulario de suscripción de emails
+
 ✓ Información de contacto completa
 ✓ Enlaces a redes sociales
 ✓ Código QR de Instagram

@@ -11,7 +11,7 @@ Esta es la versión estática de tu página web "Coming Soon" para Sip & Bite qu
 
 ✅ **Diseño Responsive** - Se adapta a móviles, tablets y desktop
 ✅ **Animaciones Suaves** - Logo con efectos 3D y frutas flotantes
-✅ **Formulario de Email** - Captura emails de suscriptores
+
 ✅ **Información de Contacto** - Teléfono, email, redes sociales
 ✅ **Optimizado para SEO** - Meta tags y estructura correcta
 ✅ **Sin dependencias** - Solo HTML, CSS y JavaScript puro

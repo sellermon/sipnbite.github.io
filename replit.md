@@ -95,7 +95,6 @@ The application follows a modern full-stack architecture with clear separation b
 - **Error Handling**: Custom error boundaries and server error middleware
 
 ### Key Features
-- **Email Collection**: Primary CTA for collecting pre-launch email subscriptions with PostgreSQL storage
 - **Responsive Design**: Mobile-first design with Tailwind breakpoints
 - **Internationalization**: Spanish language content for Costa Rican market
 - **Brand Identity**: Custom color scheme inspired by logo colors with translucent background

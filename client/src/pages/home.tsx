@@ -191,66 +191,7 @@ export default function Home() {
               <p className="text-gray-800 text-lg md:text-xl leading-relaxed">Jugos naturales, bebidas tropicales y mucho más te esperan en nuestra nueva aventura de sabores</p>
             </div>
 
-            {/* Email Signup */}
-            <div className="max-w-md mx-auto">
-              <motion.div
-                className="glass-effect rounded-2xl p-6 shadow-2xl hover-lift"
-                whileHover={{ y: -5 }}
-                transition={{ duration: 0.3 }}
-              >
-                <h3 className="text-gray-900 font-bold text-xl mb-4">
-                  <Bell className="inline mr-2 text-sip-orange" />
-                  ¡Sé el primero en saberlo!
-                </h3>
-                
-                {isSubmitted ? (
-                  <motion.div
-                    initial={{ scale: 0.8, opacity: 0 }}
-                    animate={{ scale: 1, opacity: 1 }}
-                    className="text-gray-900 text-center py-4"
-                  >
-                    <div className="text-green-300 text-4xl mb-2">✓</div>
-                    <p className="font-semibold">¡Listo! Te contactaremos pronto.</p>
-                  </motion.div>
-                ) : (
-                  <Form {...form}>
-                    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-                      <FormField
-                        control={form.control}
-                        name="email"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormControl>
-                              <Input
-                                {...field}
-                                type="email"
-                                placeholder="tu@email.com"
-                                className="w-full px-4 py-3 rounded-xl border-0 bg-white/90 text-gray-800 placeholder-gray-500 focus:ring-4 focus:ring-sip-orange/50 transition-all"
-                              />
-                            </FormControl>
-                            <FormMessage className="text-red-200" />
-                          </FormItem>
-                        )}
-                      />
-                      <Button
-                        type="submit"
-                        disabled={emailMutation.isPending}
-                        className="w-full bg-sip-orange hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg"
-                      >
-                        {emailMutation.isPending ? (
-                          "Enviando..."
-                        ) : (
-                          <>
-                            <Mail className="mr-2 h-4 w-4" />
-                            ¡Notificarme!
-                          </>
-                        )}
-                      </Button>
-                    </form>
-                  </Form>
-                )}
-              </motion.div>
-            </div>
+
           </motion.div>
         </main>
 
