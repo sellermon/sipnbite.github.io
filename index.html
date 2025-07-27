@@ -161,31 +161,7 @@
                         </p>
                     </div>
 
-                    <!-- Email Signup -->
-                    <div class="max-w-md mx-auto">
-                        <div class="glass-effect rounded-2xl p-6 shadow-2xl hover-lift">
-                            <h3 class="text-gray-900 font-bold text-xl mb-4">
-                                🔔 ¡Sé el primero en saberlo!
-                            </h3>
-                            
-                            <form id="emailForm" class="space-y-4">
-                                <input type="email" 
-                                       id="emailInput"
-                                       placeholder="tu@email.com"
-                                       required
-                                       class="w-full px-4 py-3 rounded-xl border-0 bg-white/90 text-gray-800 placeholder-gray-500 focus:ring-4 focus:ring-orange-300 transition-all">
-                                <button type="submit"
-                                        class="w-full bg-sip-orange hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg">
-                                    📧 ¡Notificarme!
-                                </button>
-                            </form>
-                            
-                            <div id="successMessage" class="hidden text-gray-900 text-center py-4">
-                                <div class="text-green-500 text-4xl mb-2">✓</div>
-                                <p class="font-semibold">¡Listo! Te contactaremos pronto.</p>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </main>
 
@@ -220,7 +196,7 @@
                         ¡Mantente en contacto!
                     </h2>
                     
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
                         <!-- Follow Us -->
                         <div class="glass-effect rounded-2xl p-6 text-center hover-lift">
                             <div class="text-pink-400 text-4xl mb-4">📷</div>
@@ -235,12 +211,7 @@
                             <p class="text-gray-700">info@sipnbite.cr</p>
                         </div>
 
-                        <!-- Call Us -->
-                        <div class="glass-effect rounded-2xl p-6 text-center hover-lift">
-                            <div class="text-green-500 text-4xl mb-4">📞</div>
-                            <h3 class="text-gray-900 font-bold text-xl mb-2">Llámanos</h3>
-                            <p class="text-gray-700">+506 8704-2019</p>
-                        </div>
+
 
                         <!-- Find Us -->
                         <div class="glass-effect rounded-2xl p-6 text-center hover-lift">
@@ -282,22 +253,7 @@
     </div>
 
     <script>
-        // Email form handling
-        document.getElementById('emailForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const email = document.getElementById('emailInput').value;
-            if (email) {
-                // Hide form and show success message
-                document.getElementById('emailForm').style.display = 'none';
-                document.getElementById('successMessage').classList.remove('hidden');
-                
-                // Here you would normally send the email to your backend
-                console.log('Email submitted:', email);
-            }
-        });
-
-        // Add some interactive hover effects
+        // Add interactive hover effects
         document.addEventListener('DOMContentLoaded', function() {
             const hoverElements = document.querySelectorAll('.hover-lift');
             
