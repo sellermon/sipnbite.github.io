@@ -121,19 +121,40 @@ export default function Home() {
         <header className="py-12 pt-32">
           <div className="container mx-auto px-4 text-center">
             <motion.div
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-              className="animate-bounce"
+              initial={{ scale: 0.8, opacity: 0, y: -30 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              transition={{ duration: 1.2, ease: "easeOut" }}
             >
-              <div className="relative inline-block">
-                <div className="absolute inset-0 bg-gradient-to-br from-green-300/20 via-green-400/15 to-green-500/10 rounded-3xl blur-xl transform scale-110"></div>
+              <motion.div 
+                className="relative inline-block"
+                animate={{ 
+                  rotateY: [0, 5, -5, 0],
+                  scale: [1, 1.05, 1]
+                }}
+                transition={{ 
+                  duration: 6, 
+                  repeat: Infinity, 
+                  ease: "easeInOut" 
+                }}
+              >
+                <motion.div 
+                  className="absolute inset-0 bg-gradient-to-br from-green-300/30 via-yellow-300/20 to-orange-300/25 rounded-3xl blur-2xl"
+                  animate={{ 
+                    scale: [1, 1.1, 1],
+                    rotate: [0, 2, -2, 0]
+                  }}
+                  transition={{ 
+                    duration: 4, 
+                    repeat: Infinity, 
+                    ease: "easeInOut" 
+                  }}
+                />
                 <img 
                   src={sipBiteLogo} 
                   alt="Sip & Bite Logo" 
-                  className="relative w-48 md:w-64 lg:w-80 h-auto mx-auto drop-shadow-2xl rounded-3xl bg-gradient-to-br from-green-200/20 via-green-300/15 to-green-400/10 backdrop-blur-sm p-4 border border-green-300/20"
+                  className="relative w-48 md:w-64 lg:w-80 h-auto mx-auto drop-shadow-2xl rounded-3xl bg-gradient-to-br from-white/30 via-green-100/25 to-yellow-100/20 backdrop-blur-sm p-6 border border-white/30 shadow-xl"
                 />
-              </div>
+              </motion.div>
             </motion.div>
           </div>
         </header>
