@@ -146,7 +146,7 @@ export default function Home() {
             {/* Coming Soon Title */}
             <div className="space-y-4">
               <motion.h1
-                className="font-bold text-4xl md:text-6xl lg:text-7xl text-white drop-shadow-lg"
+                className="text-4xl md:text-6xl lg:text-7xl text-white drop-shadow-lg mt-[0px] mb-[0px] ml-[9px] mr-[9px] pl-[137px] pr-[137px] pt-[-16px] pb-[-16px] font-extrabold"
                 animate={{ scale: [1, 1.02, 1] }}
                 transition={{ duration: 3, repeat: Infinity }}
               >
