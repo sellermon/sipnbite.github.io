@@ -67,11 +67,12 @@
 @layer utilities {
   .sip-gradient {
     background: linear-gradient(135deg, 
-      hsl(142, 69%, 58%) 0%, 
-      hsl(142, 69%, 48%) 30%,
-      hsl(142, 69%, 42%) 70%,
-      hsl(142, 69%, 38%) 100%);
+      rgba(72, 187, 120, 0.9) 0%, 
+      rgba(52, 168, 83, 0.85) 30%,
+      rgba(34, 150, 70, 0.8) 70%,
+      rgba(22, 130, 60, 0.75) 100%);
     background-attachment: fixed;
+    backdrop-filter: blur(2px);
   }
 
   .glass-effect {

@@ -118,7 +118,7 @@ export default function Home() {
       {/* Main Content */}
       <div className="relative z-10 sip-gradient min-h-screen">
         {/* Header */}
-        <header className="py-6">
+        <header className="py-12 pt-20">
           <div className="container mx-auto px-4 text-center">
             <motion.div
               initial={{ scale: 0.8, opacity: 0 }}
@@ -126,11 +126,14 @@ export default function Home() {
               transition={{ duration: 1, ease: "easeOut" }}
               className="animate-bounce"
             >
-              <img 
-                src={sipBiteLogo} 
-                alt="Sip & Bite Logo" 
-                className="w-48 md:w-64 lg:w-80 h-auto mx-auto drop-shadow-2xl rounded-3xl bg-white/10 backdrop-blur-sm p-4"
-              />
+              <div className="relative inline-block">
+                <div className="absolute inset-0 bg-gradient-to-br from-green-300/20 via-green-400/15 to-green-500/10 rounded-3xl blur-xl transform scale-110"></div>
+                <img 
+                  src={sipBiteLogo} 
+                  alt="Sip & Bite Logo" 
+                  className="relative w-48 md:w-64 lg:w-80 h-auto mx-auto drop-shadow-2xl rounded-3xl bg-gradient-to-br from-green-200/20 via-green-300/15 to-green-400/10 backdrop-blur-sm p-4 border border-green-300/20"
+                />
+              </div>
             </motion.div>
           </div>
         </header>
