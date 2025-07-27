@@ -34,7 +34,7 @@ The application follows a modern full-stack architecture with clear separation b
 - **Language**: TypeScript with ES modules
 - **API**: RESTful endpoints for email subscription management
 - **Validation**: Zod schemas for request/response validation
-- **Storage**: Abstracted storage interface with in-memory implementation
+- **Storage**: PostgreSQL database with Drizzle ORM (switched from in-memory storage)
 
 ### Database Layer
 - **ORM**: Drizzle ORM with PostgreSQL dialect

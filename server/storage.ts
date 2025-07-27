@@ -1,5 +1,6 @@
-import { type User, type InsertUser, type EmailSubscription, type InsertEmailSubscription } from "@shared/schema";
-import { randomUUID } from "crypto";
+import { users, emailSubscriptions, type User, type InsertUser, type EmailSubscription, type InsertEmailSubscription } from "@shared/schema";
+import { db } from "./db";
+import { eq } from "drizzle-orm";
 
 export interface IStorage {
   getUser(id: string): Promise<User | undefined>;
@@ -10,50 +11,44 @@ export interface IStorage {
   getAllEmailSubscriptions(): Promise<EmailSubscription[]>;
 }
 
-export class MemStorage implements IStorage {
-  private users: Map<string, User>;
-  private emailSubscriptions: Map<string, EmailSubscription>;
-
-  constructor() {
-    this.users = new Map();
-    this.emailSubscriptions = new Map();
-  }
-
+export class DatabaseStorage implements IStorage {
   async getUser(id: string): Promise<User | undefined> {
-    return this.users.get(id);
+    const [user] = await db.select().from(users).where(eq(users.id, id));
+    return user || undefined;
   }
 
   async getUserByUsername(username: string): Promise<User | undefined> {
-    return Array.from(this.users.values()).find(
-      (user) => user.username === username,
-    );
+    const [user] = await db.select().from(users).where(eq(users.username, username));
+    return user || undefined;
   }
 
   async createUser(insertUser: InsertUser): Promise<User> {
-    const id = randomUUID();
-    const user: User = { ...insertUser, id };
-    this.users.set(id, user);
+    const [user] = await db
+      .insert(users)
+      .values(insertUser)
+      .returning();
     return user;
   }
 
   async createEmailSubscription(insertSubscription: InsertEmailSubscription): Promise<EmailSubscription> {
-    const id = randomUUID();
-    const subscription: EmailSubscription = {
-      ...insertSubscription,
-      id,
-      subscribedAt: new Date(),
-    };
-    this.emailSubscriptions.set(insertSubscription.email, subscription);
+    const [subscription] = await db
+      .insert(emailSubscriptions)
+      .values(insertSubscription)
+      .returning();
     return subscription;
   }
 
   async getEmailSubscription(email: string): Promise<EmailSubscription | undefined> {
-    return this.emailSubscriptions.get(email);
+    const [subscription] = await db
+      .select()
+      .from(emailSubscriptions)
+      .where(eq(emailSubscriptions.email, email));
+    return subscription || undefined;
   }
 
   async getAllEmailSubscriptions(): Promise<EmailSubscription[]> {
-    return Array.from(this.emailSubscriptions.values());
+    return await db.select().from(emailSubscriptions);
   }
 }
 
-export const storage = new MemStorage();
+export const storage = new DatabaseStorage();
