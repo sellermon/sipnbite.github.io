@@ -45,7 +45,7 @@ const FloatingFruit = ({ emoji, size, delay, duration, index }: {
 
   return (
     <motion.div
-      className={`fixed ${size} pointer-events-none z-0 select-none`}
+      className={`fixed ${size} pointer-events-none z-20 select-none`}
       style={position}
       animate={{
         y: [-20, 20, -20],
@@ -103,7 +103,7 @@ export default function Home() {
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Floating Fruits Background */}
-      <div className="fixed inset-0 overflow-hidden">
+      <div className="fixed inset-0 overflow-hidden z-20">
         {floatingFruits.map((fruit, index) => (
           <FloatingFruit
             key={index}
