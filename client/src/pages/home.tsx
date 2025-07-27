@@ -205,7 +205,7 @@ export default function Home() {
                   🍹 Las bebidas más frescas y deliciosas
                 </p>
                 <p className="text-gray-800 text-base md:text-xl leading-relaxed mt-4">
-                  Jugos naturales • Bebidas tropicales • Smoothies únicos
+                  Jugos naturales • Bebidas tropicales • Refrescos únicos
                 </p>
                 <p className="text-gray-700 text-sm md:text-lg leading-relaxed mt-3 italic">
                   Una nueva aventura de sabores te espera en Costa Rica
