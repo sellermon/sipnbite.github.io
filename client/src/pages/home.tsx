@@ -186,9 +186,31 @@ export default function Home() {
             </div>
 
             {/* Description */}
-            <div className="max-w-3xl mx-auto space-y-6">
-              <p className="text-gray-900 text-xl md:text-2xl font-semibold leading-relaxed drop-shadow-md">Prepárate para disfrutar de algo nuevo, las bebidas más frescas y deliciosas</p>
-              <p className="text-gray-800 text-lg md:text-xl leading-relaxed">Jugos naturales, bebidas tropicales y mucho más te esperan en nuestra nueva aventura de sabores</p>
+            <div className="max-w-4xl mx-auto space-y-8">
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                className="text-gray-900 text-xl md:text-3xl lg:text-4xl font-bold leading-relaxed drop-shadow-lg bg-gradient-to-r from-green-600 via-orange-500 to-red-400 bg-clip-text text-transparent"
+              >
+                Prepárate para disfrutar de algo nuevo
+              </motion.p>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, delay: 1 }}
+                className="bg-white/20 backdrop-blur-md rounded-3xl p-8 border border-white/30 shadow-2xl"
+              >
+                <p className="text-gray-900 text-lg md:text-2xl font-semibold leading-relaxed">
+                  🍹 Las bebidas más frescas y deliciosas
+                </p>
+                <p className="text-gray-800 text-base md:text-xl leading-relaxed mt-4">
+                  Jugos naturales • Bebidas tropicales • Smoothies únicos
+                </p>
+                <p className="text-gray-700 text-sm md:text-lg leading-relaxed mt-3 italic">
+                  Una nueva aventura de sabores te espera en Costa Rica
+                </p>
+              </motion.div>
             </div>
 
 
@@ -252,14 +274,18 @@ export default function Home() {
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.1 }}
                 viewport={{ once: true }}
-                className="glass-effect rounded-2xl p-6 text-center hover-lift"
-                whileHover={{ y: -5 }}
+                className="glass-effect rounded-2xl p-8 text-center hover-lift card-pulse relative overflow-hidden"
+                whileHover={{ y: -8, scale: 1.05 }}
               >
-                <div className="text-pink-400 text-4xl mb-4">
-                  <Instagram className="mx-auto" />
+                <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 via-purple-500/5 to-pink-600/10 opacity-50"></div>
+                <div className="relative z-10">
+                  <div className="text-pink-500 text-5xl mb-4">
+                    <Instagram className="mx-auto drop-shadow-lg" />
+                  </div>
+                  <h3 className="text-gray-900 font-bold text-xl mb-2">Síguenos</h3>
+                  <p className="text-gray-700 font-semibold">@sipn_bite.cr</p>
+                  <p className="text-gray-600 text-sm mt-2">¡Únete a nuestra aventura!</p>
                 </div>
-                <h3 className="text-gray-900 font-bold text-xl mb-2">Síguenos</h3>
-                <p className="text-gray-700">@sipn_bite.cr</p>
               </motion.div>
 
               {/* Write to Us */}
@@ -268,14 +294,18 @@ export default function Home() {
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="glass-effect rounded-2xl p-6 text-center hover-lift"
-                whileHover={{ y: -5 }}
+                className="glass-effect rounded-2xl p-8 text-center hover-lift card-pulse relative overflow-hidden"
+                whileHover={{ y: -8, scale: 1.05 }}
               >
-                <div className="text-sip-orange text-4xl mb-4">
-                  <Mail className="mx-auto" />
+                <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-yellow-500/5 to-orange-600/10 opacity-50"></div>
+                <div className="relative z-10">
+                  <div className="text-sip-orange text-5xl mb-4">
+                    <Mail className="mx-auto drop-shadow-lg" />
+                  </div>
+                  <h3 className="text-gray-900 font-bold text-xl mb-2">Escríbenos</h3>
+                  <p className="text-gray-700 font-semibold">info@sipnbite.cr</p>
+                  <p className="text-gray-600 text-sm mt-2">¡Estamos aquí para ti!</p>
                 </div>
-                <h3 className="text-gray-900 font-bold text-xl mb-2">Escríbenos</h3>
-                <p className="text-gray-700">info@sipnbite.cr</p>
               </motion.div>
 
 
@@ -286,14 +316,18 @@ export default function Home() {
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
                 viewport={{ once: true }}
-                className="glass-effect rounded-2xl p-6 text-center hover-lift"
-                whileHover={{ y: -5 }}
+                className="glass-effect rounded-2xl p-8 text-center hover-lift card-pulse relative overflow-hidden"
+                whileHover={{ y: -8, scale: 1.05 }}
               >
-                <div className="text-sip-red text-4xl mb-4">
-                  <MapPin className="mx-auto" />
+                <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 via-pink-500/5 to-red-600/10 opacity-50"></div>
+                <div className="relative z-10">
+                  <div className="text-sip-red text-5xl mb-4">
+                    <MapPin className="mx-auto drop-shadow-lg" />
+                  </div>
+                  <h3 className="text-gray-900 font-bold text-xl mb-2">Encuéntranos</h3>
+                  <p className="text-gray-700 font-semibold">Heredia, Costa Rica</p>
+                  <p className="text-gray-600 text-sm mt-2">¡El sabor tropical!</p>
                 </div>
-                <h3 className="text-gray-900 font-bold text-xl mb-2">Encuéntranos</h3>
-                <p className="text-gray-700">Heredia, Costa Rica</p>
               </motion.div>
             </div>
           </div>
