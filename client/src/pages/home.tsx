@@ -115,7 +115,6 @@ export default function Home() {
           />
         ))}
       </div>
-
       {/* Main Content */}
       <div className="relative z-10 sip-gradient min-h-screen">
         {/* Header */}
@@ -167,9 +166,7 @@ export default function Home() {
               <p className="text-white text-xl md:text-2xl font-semibold leading-relaxed drop-shadow-md">
                 Prepárate para disfrutar de las bebidas más frescas y deliciosas
               </p>
-              <p className="text-green-100 text-lg md:text-xl leading-relaxed">
-                Jugos naturales, smoothies, bebidas tropicales y mucho más te esperan en nuestra nueva aventura de sabores
-              </p>
+              <p className="text-green-100 text-lg md:text-xl leading-relaxed">Jugos naturales, bebidas tropicales y mucho más te esperan en nuestra nueva aventura de sabores</p>
             </div>
 
             {/* Email Signup */}
