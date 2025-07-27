@@ -163,9 +163,7 @@ export default function Home() {
 
             {/* Description */}
             <div className="max-w-3xl mx-auto space-y-6">
-              <p className="text-white text-xl md:text-2xl font-semibold leading-relaxed drop-shadow-md">
-                Prepárate para disfrutar de las bebidas más frescas y deliciosas
-              </p>
+              <p className="text-white text-xl md:text-2xl font-semibold leading-relaxed drop-shadow-md">Prepárate para disfrutar de algo nuevo , las bebidas más frescas y deliciosas</p>
               <p className="text-green-100 text-lg md:text-xl leading-relaxed">Jugos naturales, bebidas tropicales y mucho más te esperan en nuestra nueva aventura de sabores</p>
             </div>
 
