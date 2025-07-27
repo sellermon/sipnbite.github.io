@@ -45,10 +45,15 @@ Para cambiar contenido, edita el archivo `index.html`:
 - **Imágenes**: Reemplaza las URLs de las imágenes
 - **Contacto**: Actualiza teléfonos, emails y redes sociales
 
+## Imágenes requeridas:
+
+Debes incluir estos archivos de imagen en la misma carpeta que el `index.html`:
+
+- **`image1.png`** - Tu logo de Sip & Bite
+- **`image2.png`** - Código QR de Instagram (@sipn_bite.cr)
+
 ## Notas importantes:
 
-- **Logo**: Actualmente usa un placeholder. Reemplaza la URL de la imagen del logo con tu archivo real
-- **QR Code**: Incluye tu código QR real de Instagram
 - **Emails**: El formulario solo muestra mensaje de éxito. Para capturar emails reales, conecta con un servicio como Formspree o EmailJS
 
 ## Dominio personalizado:
