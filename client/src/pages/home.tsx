@@ -211,12 +211,30 @@ export default function Home() {
                 transition={{ duration: 0.3 }}
               >
                 <h2 className="text-gray-900 font-bold text-xl md:text-2xl mb-4">
-                  <a href="https://www.instagram.com/sipn_bite.cr/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center hover:text-pink-600 transition-colors">
+                  <a 
+                    href="https://instagram.com/sipn_bite.cr" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center hover:text-pink-600 transition-colors cursor-pointer"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      window.open('https://instagram.com/sipn_bite.cr', '_blank');
+                    }}
+                  >
                     <Instagram className="inline mr-2 text-pink-600" />
                     ¡Síguenos!
                   </a>
                 </h2>
-                <a href="https://www.instagram.com/sipn_bite.cr/" target="_blank" rel="noopener noreferrer" className="block">
+                <a 
+                  href="https://instagram.com/sipn_bite.cr" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="block cursor-pointer"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    window.open('https://instagram.com/sipn_bite.cr', '_blank');
+                  }}
+                >
                   <div className="bg-white rounded-xl p-4 mb-4 shadow-inner hover:shadow-lg transition-shadow">
                     <img 
                       src={instagramQR} 
@@ -258,7 +276,16 @@ export default function Home() {
                 viewport={{ once: true }}
                 whileHover={{ y: -5 }}
               >
-                <a href="https://www.instagram.com/sipn_bite.cr/" target="_blank" rel="noopener noreferrer" className="block">
+                <a 
+                  href="https://instagram.com/sipn_bite.cr" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="block cursor-pointer"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    window.open('https://instagram.com/sipn_bite.cr', '_blank');
+                  }}
+                >
                   <div className="glass-effect rounded-2xl p-6 text-center hover-lift transition-all hover:scale-105">
                     <div className="text-pink-400 text-4xl mb-4">
                       <Instagram className="mx-auto" />
