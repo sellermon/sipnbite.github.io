@@ -211,44 +211,36 @@ export default function Home() {
                 transition={{ duration: 0.3 }}
               >
                 <h2 className="text-gray-900 font-bold text-xl md:text-2xl mb-4">
-                  <a 
-                    href="https://instagram.com/sipn_bite.cr" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <span 
                     className="inline-flex items-center hover:text-pink-600 transition-colors cursor-pointer"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      window.open('https://instagram.com/sipn_bite.cr', '_blank');
-                    }}
+                    onClick={() => window.open('https://instagram.com/sipn_bite.cr', '_blank')}
                   >
                     <Instagram className="inline mr-2 text-pink-600" />
                     ¡Síguenos!
-                  </a>
+                  </span>
                 </h2>
-                <a 
-                  href="https://instagram.com/sipn_bite.cr" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="block cursor-pointer"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    window.open('https://instagram.com/sipn_bite.cr', '_blank');
-                  }}
+                <div 
+                  className="bg-white rounded-xl p-4 mb-4 shadow-inner hover:shadow-lg transition-shadow cursor-pointer"
+                  onClick={() => window.open('https://instagram.com/sipn_bite.cr', '_blank')}
                 >
-                  <div className="bg-white rounded-xl p-4 mb-4 shadow-inner hover:shadow-lg transition-shadow">
-                    <img 
-                      src={instagramQR} 
-                      alt="Instagram QR Code @sipn_bite.cr" 
-                      className="w-full h-auto max-w-48 mx-auto rounded-lg"
-                    />
-                  </div>
-                </a>
+                  <img 
+                    src={instagramQR} 
+                    alt="Instagram QR Code @sipn_bite.cr" 
+                    className="w-full h-auto max-w-48 mx-auto rounded-lg"
+                  />
+                </div>
                 <p className="text-gray-700 text-base font-medium">
                   Escanea para seguir nuestras aventuras
                 </p>
                 <p className="text-gray-900 font-bold text-lg mt-2">
                   @sipn_bite.cr
                 </p>
+                <button 
+                  onClick={() => window.open('https://instagram.com/sipn_bite.cr', '_blank')}
+                  className="mt-4 bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-lg transition-colors"
+                >
+                  Ir a Instagram
+                </button>
               </motion.div>
             </motion.div>
           </div>
@@ -274,26 +266,16 @@ export default function Home() {
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.1 }}
                 viewport={{ once: true }}
-                whileHover={{ y: -5 }}
+                className="cursor-pointer"
+                onClick={() => window.open('https://instagram.com/sipn_bite.cr', '_blank')}
               >
-                <a 
-                  href="https://instagram.com/sipn_bite.cr" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="block cursor-pointer"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    window.open('https://instagram.com/sipn_bite.cr', '_blank');
-                  }}
-                >
-                  <div className="glass-effect rounded-2xl p-6 text-center hover-lift transition-all hover:scale-105">
-                    <div className="text-pink-400 text-4xl mb-4">
-                      <Instagram className="mx-auto" />
-                    </div>
-                    <h3 className="text-gray-900 font-bold text-xl mb-2">Síguenos</h3>
-                    <p className="text-gray-700">@sipn_bite.cr</p>
+                <div className="glass-effect rounded-2xl p-6 text-center hover-lift transition-all hover:scale-105">
+                  <div className="text-pink-400 text-4xl mb-4">
+                    <Instagram className="mx-auto" />
                   </div>
-                </a>
+                  <h3 className="text-gray-900 font-bold text-xl mb-2">Síguenos</h3>
+                  <p className="text-gray-700">@sipn_bite.cr</p>
+                </div>
               </motion.div>
 
               {/* Write to Us */}
