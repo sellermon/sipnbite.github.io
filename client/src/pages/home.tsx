@@ -129,7 +129,7 @@ export default function Home() {
               <img 
                 src={sipBiteLogo} 
                 alt="Sip & Bite Logo" 
-                className="w-48 md:w-64 lg:w-80 h-auto mx-auto drop-shadow-2xl ml-[336px] mr-[336px] pl-[0px] pr-[0px] mt-[102px] mb-[102px]"
+                className="w-48 md:w-64 lg:w-80 h-auto mx-auto drop-shadow-2xl rounded-3xl bg-white/10 backdrop-blur-sm p-4"
               />
             </motion.div>
           </div>
