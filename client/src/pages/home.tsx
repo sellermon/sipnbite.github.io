@@ -174,7 +174,7 @@ export default function Home() {
                 animate={{ scale: [1, 1.02, 1] }}
                 transition={{ duration: 3, repeat: Infinity }}
               >
-                ¡PRÓXIMAMENTE!
+                ¡Sip & Bite ya está aquí!
               </motion.h1>
               <motion.div
                 className="bg-sip-orange text-white px-8 py-4 rounded-full inline-block font-bold text-xl md:text-2xl shadow-2xl hover-lift"
@@ -193,7 +193,7 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.8 }}
                 className="text-gray-900 text-xl md:text-3xl lg:text-4xl font-bold leading-relaxed drop-shadow-lg bg-gradient-to-r from-green-600 via-orange-500 to-red-400 bg-clip-text text-transparent"
               >
-                Prepárate para disfrutar de algo nuevo
+                Jugos naturales, energía real.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
