@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Form, FormControl, FormField, FormItem, FormMessage } from "@/components/ui/form";
 import { Mail, Phone, MapPin, Bell, Instagram, Facebook, MessageCircle } from "lucide-react";
+import { SiTiktok } from "react-icons/si";
 import sipBiteLogo from "@assets/SIP & Bite Logo 1_1753587765006.png";
 import instagramQR from "@assets/IGQR_1753587826711.jpg";
 import type { z } from "zod";
@@ -267,7 +268,7 @@ export default function Home() {
               ¡Mantente en contacto!
             </motion.h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {/* Follow Us */}
               <motion.div
                 initial={{ y: 50, opacity: 0 }}
@@ -282,9 +283,29 @@ export default function Home() {
                   <div className="text-pink-500 text-5xl mb-4">
                     <Instagram className="mx-auto drop-shadow-lg" />
                   </div>
-                  <h3 className="text-gray-900 font-bold text-xl mb-2">Síguenos</h3>
+                  <h3 className="text-gray-900 font-bold text-xl mb-2">Instagram</h3>
                   <p className="text-gray-700 font-semibold">@sipn_bite.cr</p>
                   <p className="text-gray-600 text-sm mt-2">¡Únete a nuestra aventura!</p>
+                </div>
+              </motion.div>
+
+              {/* TikTok */}
+              <motion.div
+                initial={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.8, delay: 0.15 }}
+                viewport={{ once: true }}
+                className="glass-effect rounded-2xl p-8 text-center hover-lift card-pulse relative overflow-hidden"
+                whileHover={{ y: -8, scale: 1.05 }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-pink-500/5 to-cyan-600/10 opacity-50"></div>
+                <div className="relative z-10">
+                  <div className="text-gray-900 text-5xl mb-4">
+                    <SiTiktok className="mx-auto drop-shadow-lg" />
+                  </div>
+                  <h3 className="text-gray-900 font-bold text-xl mb-2">TikTok</h3>
+                  <p className="text-gray-700 font-semibold">sipn_bite.cr</p>
+                  <p className="text-gray-600 text-sm mt-2">¡Sigue nuestro contenido!</p>
                 </div>
               </motion.div>
 
