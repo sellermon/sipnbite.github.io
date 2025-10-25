@@ -9,10 +9,11 @@ import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Form, FormControl, FormField, FormItem, FormMessage } from "@/components/ui/form";
-import { Mail, Phone, MapPin, Bell, Instagram, Facebook, MessageCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Bell, Instagram, Facebook, MessageCircle, Sparkles } from "lucide-react";
 import { SiTiktok } from "react-icons/si";
 import sipBiteLogo from "@assets/SIP & Bite Logo 1_1753587765006.png";
 import instagramQR from "@assets/IGQR_1753587826711.jpg";
+import productCan from "@assets/Sip&Bite ACC_1761432778390.png";
 import type { z } from "zod";
 
 type EmailFormData = z.infer<typeof insertEmailSubscriptionSchema>;
@@ -138,6 +139,33 @@ export default function Home() {
                   ease: "easeInOut" 
                 }}
               >
+                {/* Sparkle particles effect */}
+                <div className="sparkle-container">
+                  {[...Array(12)].map((_, i) => (
+                    <motion.div
+                      key={i}
+                      className="sparkle"
+                      style={{
+                        top: `${Math.random() * 100}%`,
+                        left: `${Math.random() * 100}%`,
+                      }}
+                      animate={{
+                        scale: [0, 1, 0],
+                        opacity: [0, 1, 0],
+                        rotate: [0, 180, 360],
+                      }}
+                      transition={{
+                        duration: 2 + Math.random() * 2,
+                        repeat: Infinity,
+                        delay: Math.random() * 2,
+                        ease: "easeInOut",
+                      }}
+                    >
+                      <Sparkles className="w-4 h-4 text-yellow-300" />
+                    </motion.div>
+                  ))}
+                </div>
+
                 <motion.div 
                   className="absolute inset-0 bg-gradient-to-br from-green-300/30 via-yellow-300/20 to-orange-300/25 rounded-3xl blur-2xl"
                   animate={{ 
@@ -179,8 +207,8 @@ export default function Home() {
               </motion.h1>
             </div>
 
-            {/* Description */}
-            <div className="max-w-4xl mx-auto space-y-8">
+            {/* Product Showcase with Can */}
+            <div className="max-w-6xl mx-auto space-y-8">
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -189,10 +217,34 @@ export default function Home() {
               >
                 Jugos naturales, energía real.
               </motion.p>
+
+              {/* Product Can Image */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8, y: 30 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                transition={{ duration: 1, delay: 1.2, ease: "easeOut" }}
+                className="relative"
+              >
+                <motion.img
+                  src={productCan}
+                  alt="Sip & Bite - Bebida Natural"
+                  className="w-full max-w-md mx-auto h-auto drop-shadow-2xl"
+                  animate={{
+                    y: [-10, 10, -10],
+                  }}
+                  transition={{
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
+                  data-testid="img-product-can"
+                />
+              </motion.div>
+
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, delay: 1 }}
+                transition={{ duration: 0.8, delay: 1.4 }}
                 className="bg-white/20 backdrop-blur-md rounded-3xl p-8 border border-white/30 shadow-2xl"
               >
                 <p className="text-gray-900 text-lg md:text-2xl font-semibold leading-relaxed">
