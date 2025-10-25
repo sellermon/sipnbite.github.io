@@ -177,13 +177,6 @@ export default function Home() {
               >
                 ¡Sip & Bite ya está aquí!
               </motion.h1>
-              <motion.div
-                className="bg-sip-orange text-white px-8 py-4 rounded-full inline-block font-bold text-xl md:text-2xl shadow-2xl hover-lift"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                2025
-              </motion.div>
             </div>
 
             {/* Description */}
