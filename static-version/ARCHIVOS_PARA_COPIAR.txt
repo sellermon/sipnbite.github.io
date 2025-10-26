@@ -1,12 +1,11 @@
 🚀 ARCHIVOS COMPLETOS PARA HOSTEAR TU PÁGINA WEB SIP & BITE
 
 📁 ESTRUCTURA DE ARCHIVOS:
-Tu carpeta debe contener exactamente estos 4 archivos:
+Tu carpeta debe contener exactamente estos 3 archivos:
 
 1. index.html (página principal)
 2. image1.png (logo de Sip & Bite) 
 3. image2.png (código QR de Instagram)
-4. image3.png (imagen de la lata del producto)
 
 ========================================
 📋 PASOS PARA HOSTEAR:
@@ -16,7 +15,7 @@ Tu carpeta debe contener exactamente estos 4 archivos:
 
 2. COPIAR ARCHIVOS:
    - Copia el contenido del index.html de abajo
-   - Guarda las imágenes como image1.png, image2.png e image3.png
+   - Guarda las imágenes como image1.png e image2.png
 
 3. SUBIR A HOSTING:
    - Netlify: Arrastra la carpeta completa
@@ -45,9 +44,8 @@ Tu carpeta debe contener exactamente estos 4 archivos:
 📄 Tu página incluye:
 
 ✓ Diseño responsive (móvil, tablet, desktop)
-✓ Animaciones del logo con efectos 3D y chispas brillantes
+✓ Animaciones del logo con efectos 3D
 ✓ Frutas flotantes en el fondo
-✓ Imagen de producto flotante con animación
 ✓ Información de contacto completa
 ✓ Enlaces a redes sociales (Instagram y TikTok)
 ✓ Código QR de Instagram
@@ -61,7 +59,6 @@ Tu carpeta debe contener exactamente estos 4 archivos:
 3. Asegúrate de tener las imágenes:
    - image1.png (tu logo)
    - image2.png (código QR)
-   - image3.png (lata del producto)
 4. Sube todo a tu servicio de hosting preferido
 
 ¡Tu página estará funcionando en minutos! 🚀
