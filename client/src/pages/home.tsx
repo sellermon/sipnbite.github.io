@@ -104,7 +104,7 @@ export default function Home() {
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Floating Fruits Background */}
-      <div className="fixed inset-0 overflow-hidden z-20">
+      <div className="fixed inset-0 overflow-hidden z-20 pointer-events-none">
         {floatingFruits.map((fruit, index) => (
           <FloatingFruit
             key={index}
@@ -397,10 +397,11 @@ export default function Home() {
           href="https://wa.me/50689663939"
           target="_blank"
           rel="noopener noreferrer"
-          className="fixed bottom-8 right-8 z-50 bg-[#25d366] text-white p-5 rounded-full shadow-2xl hover:bg-[#20ba5a] hover:scale-110 transition-all duration-300 whatsapp-float flex items-center justify-center"
+          className="fixed bottom-8 right-8 z-50 bg-[#25d366] text-white p-5 rounded-full shadow-2xl hover:bg-[#20ba5a] hover:scale-110 transition-all duration-300 flex items-center justify-center"
           data-testid="button-whatsapp-float"
+          style={{ pointerEvents: 'auto' }}
         >
-          <SiWhatsapp className="w-8 h-8" />
+          <SiWhatsapp className="w-8 h-8" style={{ pointerEvents: 'none' }} />
         </a>
       </div>
     </div>
