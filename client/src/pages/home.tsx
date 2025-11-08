@@ -15,6 +15,8 @@ import sipBiteLogo from "@assets/SIP & Bite Logo 1_1753587765006.png";
 import instagramQR from "@assets/IGQR_1753587826711.jpg";
 import type { z } from "zod";
 
+import SIP___Bite_Transparente from "@assets/SIP & Bite Transparente.png";
+
 type EmailFormData = z.infer<typeof insertEmailSubscriptionSchema>;
 
 const floatingFruits = [
@@ -151,7 +153,7 @@ export default function Home() {
                   }}
                 />
                 <img 
-                  src={sipBiteLogo} 
+                  src={SIP___Bite_Transparente} 
                   alt="Sip & Bite Logo" 
                   className="relative w-48 md:w-64 lg:w-80 h-auto mx-auto drop-shadow-2xl rounded-3xl bg-gradient-to-br from-white/30 via-green-100/25 to-yellow-100/20 backdrop-blur-sm p-6 border border-white/30 shadow-xl"
                 />
