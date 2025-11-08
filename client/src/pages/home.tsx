@@ -263,52 +263,58 @@ export default function Home() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {/* Follow Us */}
-              <motion.a
-                href="https://instagram.com/sipn_bite.cr"
-                target="_blank"
-                rel="noopener noreferrer"
+              <motion.div
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.1 }}
                 viewport={{ once: true }}
-                className="glass-effect rounded-2xl p-8 text-center hover-lift card-pulse relative overflow-hidden cursor-pointer block"
                 whileHover={{ y: -8, scale: 1.05 }}
-                data-testid="link-instagram"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 via-purple-500/5 to-pink-600/10 opacity-50"></div>
-                <div className="relative z-10">
-                  <div className="text-pink-500 text-5xl mb-4">
-                    <Instagram className="mx-auto drop-shadow-lg" />
+                <a
+                  href="https://instagram.com/sipn_bite.cr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="glass-effect rounded-2xl p-8 text-center hover-lift card-pulse relative overflow-hidden cursor-pointer block"
+                  data-testid="link-instagram"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 via-purple-500/5 to-pink-600/10 opacity-50"></div>
+                  <div className="relative z-10">
+                    <div className="text-pink-500 text-5xl mb-4">
+                      <Instagram className="mx-auto drop-shadow-lg" />
+                    </div>
+                    <h3 className="text-gray-900 font-bold text-xl mb-2">Instagram</h3>
+                    <p className="text-gray-700 font-semibold">@sipn_bite.cr</p>
+                    <p className="text-gray-600 text-sm mt-2">¡Únete a nuestra aventura!</p>
                   </div>
-                  <h3 className="text-gray-900 font-bold text-xl mb-2">Instagram</h3>
-                  <p className="text-gray-700 font-semibold">@sipn_bite.cr</p>
-                  <p className="text-gray-600 text-sm mt-2">¡Únete a nuestra aventura!</p>
-                </div>
-              </motion.a>
+                </a>
+              </motion.div>
 
               {/* TikTok */}
-              <motion.a
-                href="https://tiktok.com/@sipn_bite.cr"
-                target="_blank"
-                rel="noopener noreferrer"
+              <motion.div
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.15 }}
                 viewport={{ once: true }}
-                className="glass-effect rounded-2xl p-8 text-center hover-lift card-pulse relative overflow-hidden cursor-pointer block"
                 whileHover={{ y: -8, scale: 1.05 }}
-                data-testid="link-tiktok"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-pink-500/5 to-cyan-600/10 opacity-50"></div>
-                <div className="relative z-10">
-                  <div className="text-gray-900 text-5xl mb-4">
-                    <SiTiktok className="mx-auto drop-shadow-lg" />
+                <a
+                  href="https://tiktok.com/@sipn_bite.cr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="glass-effect rounded-2xl p-8 text-center hover-lift card-pulse relative overflow-hidden cursor-pointer block"
+                  data-testid="link-tiktok"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-pink-500/5 to-cyan-600/10 opacity-50"></div>
+                  <div className="relative z-10">
+                    <div className="text-gray-900 text-5xl mb-4">
+                      <SiTiktok className="mx-auto drop-shadow-lg" />
+                    </div>
+                    <h3 className="text-gray-900 font-bold text-xl mb-2">TikTok</h3>
+                    <p className="text-gray-700 font-semibold">sipn_bite.cr</p>
+                    <p className="text-gray-600 text-sm mt-2">¡Sigue nuestro contenido!</p>
                   </div>
-                  <h3 className="text-gray-900 font-bold text-xl mb-2">TikTok</h3>
-                  <p className="text-gray-700 font-semibold">sipn_bite.cr</p>
-                  <p className="text-gray-600 text-sm mt-2">¡Sigue nuestro contenido!</p>
-                </div>
-              </motion.a>
+                </a>
+              </motion.div>
 
               {/* Write to Us */}
               <motion.div
@@ -403,20 +409,24 @@ export default function Home() {
         </footer>
 
         {/* Floating WhatsApp Button */}
-        <motion.a
-          href="https://wa.me/50689663939"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="fixed bottom-8 right-8 z-50 bg-[#25d366] text-white p-5 rounded-full shadow-2xl hover:bg-[#20ba5a] transition-colors whatsapp-float"
+        <motion.div
+          className="fixed bottom-8 right-8 z-50"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 1, duration: 0.5, type: "spring" }}
-          data-testid="button-whatsapp-float"
         >
-          <SiWhatsapp className="w-8 h-8" />
-        </motion.a>
+          <a
+            href="https://wa.me/50689663939"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#25d366] text-white p-5 rounded-full shadow-2xl hover:bg-[#20ba5a] transition-colors whatsapp-float flex items-center justify-center"
+            data-testid="button-whatsapp-float"
+          >
+            <SiWhatsapp className="w-8 h-8" />
+          </a>
+        </motion.div>
       </div>
     </div>
   );
