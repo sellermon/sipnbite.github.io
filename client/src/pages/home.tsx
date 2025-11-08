@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Form, FormControl, FormField, FormItem, FormMessage } from "@/components/ui/form";
 import { Mail, Phone, MapPin, Bell, Instagram, Facebook, MessageCircle } from "lucide-react";
-import { SiTiktok } from "react-icons/si";
+import { SiTiktok, SiWhatsapp } from "react-icons/si";
 import sipBiteLogo from "@assets/SIP & Bite Logo 1_1753587765006.png";
 import instagramQR from "@assets/IGQR_1753587826711.jpg";
 import type { z } from "zod";
@@ -393,6 +393,22 @@ export default function Home() {
             </motion.div>
           </div>
         </footer>
+
+        {/* Floating WhatsApp Button */}
+        <motion.a
+          href="https://wa.me/50689663939"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fixed bottom-8 right-8 z-50 bg-[#25d366] text-white p-5 rounded-full shadow-2xl hover:bg-[#20ba5a] transition-colors whatsapp-float"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          initial={{ scale: 0, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ delay: 1, duration: 0.5, type: "spring" }}
+          data-testid="button-whatsapp-float"
+        >
+          <SiWhatsapp className="w-8 h-8" />
+        </motion.a>
       </div>
     </div>
   );
