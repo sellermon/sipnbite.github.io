@@ -201,9 +201,9 @@ export default function Home() {
                 <p className="text-gray-800 text-base md:text-xl leading-relaxed mt-4">
                   Jugos naturales • Bebidas tropicales • Refrescos únicos
                 </p>
-                <p className="text-gray-700 text-sm md:text-lg leading-relaxed mt-3 italic">
-                  Una nueva aventura de sabores te espera en Costa Rica
-                </p>
+                <p className="text-gray-700 text-sm md:text-lg leading-relaxed mt-3 italic font-medium">¡La explosión de sabor que tu día necesita! 🎉 En Sip&Bite, creamos experiencias refrescantes con las frutas más frescas. Jugos, diferentes sabores de Té  e infusiones y Agua de Coco para cada antojo. ¿Listo para refrescar tu día?
+                 ¡Pide fácil y rápido! 
+                👇 www.sipnbite.cr</p>
               </motion.div>
             </div>
 
