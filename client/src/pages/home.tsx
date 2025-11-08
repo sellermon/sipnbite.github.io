@@ -263,42 +263,46 @@ export default function Home() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {/* Follow Us */}
-              <a
-                href="https://instagram.com/sipn_bite.cr"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="glass-effect rounded-2xl p-8 text-center hover-lift relative overflow-hidden cursor-pointer block transition-all duration-300 hover:scale-105 hover:-translate-y-2"
-                data-testid="link-instagram"
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 via-purple-500/5 to-pink-600/10 opacity-50 pointer-events-none" aria-hidden="true"></div>
-                <div className="relative z-10 pointer-events-none">
+              <div className="glass-effect rounded-2xl p-8 text-center relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 via-purple-500/5 to-pink-600/10 opacity-50"></div>
+                <div className="relative z-10">
                   <div className="text-pink-500 text-5xl mb-4">
                     <Instagram className="mx-auto drop-shadow-lg" />
                   </div>
                   <h3 className="text-gray-900 font-bold text-xl mb-2">Instagram</h3>
                   <p className="text-gray-700 font-semibold">@sipn_bite.cr</p>
-                  <p className="text-gray-600 text-sm mt-2">¡Únete a nuestra aventura!</p>
+                  <a 
+                    href="https://instagram.com/sipn_bite.cr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mt-3 px-6 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition-colors"
+                    data-testid="link-instagram"
+                  >
+                    Visitar Instagram
+                  </a>
                 </div>
-              </a>
+              </div>
 
               {/* TikTok */}
-              <a
-                href="https://tiktok.com/@sipn_bite.cr"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="glass-effect rounded-2xl p-8 text-center hover-lift relative overflow-hidden cursor-pointer block transition-all duration-300 hover:scale-105 hover:-translate-y-2"
-                data-testid="link-tiktok"
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-pink-500/5 to-cyan-600/10 opacity-50 pointer-events-none" aria-hidden="true"></div>
-                <div className="relative z-10 pointer-events-none">
+              <div className="glass-effect rounded-2xl p-8 text-center relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-pink-500/5 to-cyan-600/10 opacity-50"></div>
+                <div className="relative z-10">
                   <div className="text-gray-900 text-5xl mb-4">
                     <SiTiktok className="mx-auto drop-shadow-lg" />
                   </div>
                   <h3 className="text-gray-900 font-bold text-xl mb-2">TikTok</h3>
                   <p className="text-gray-700 font-semibold">sipn_bite.cr</p>
-                  <p className="text-gray-600 text-sm mt-2">¡Sigue nuestro contenido!</p>
+                  <a 
+                    href="https://tiktok.com/@sipn_bite.cr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mt-3 px-6 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-700 transition-colors"
+                    data-testid="link-tiktok"
+                  >
+                    Visitar TikTok
+                  </a>
                 </div>
-              </a>
+              </div>
 
               {/* Write to Us */}
               <motion.div
@@ -397,10 +401,10 @@ export default function Home() {
           href="https://wa.me/50689663939"
           target="_blank"
           rel="noopener noreferrer"
-          className="fixed bottom-8 right-8 z-50 bg-[#25d366] text-white p-5 rounded-full shadow-2xl hover:bg-[#20ba5a] hover:scale-110 transition-all duration-300 whatsapp-float flex items-center justify-center"
+          className="fixed bottom-8 right-8 z-50 bg-green-500 text-white px-6 py-4 rounded-full shadow-2xl hover:bg-green-600 transition-colors font-bold"
           data-testid="button-whatsapp-float"
         >
-          <SiWhatsapp className="w-8 h-8" />
+          WhatsApp
         </a>
       </div>
     </div>
