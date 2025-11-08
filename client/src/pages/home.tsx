@@ -267,11 +267,11 @@ export default function Home() {
                 href="https://instagram.com/sipn_bite.cr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="glass-effect rounded-2xl p-8 text-center hover-lift card-pulse relative overflow-hidden cursor-pointer block transition-all duration-300 hover:scale-105 hover:-translate-y-2"
+                className="glass-effect rounded-2xl p-8 text-center hover-lift relative overflow-hidden cursor-pointer block transition-all duration-300 hover:scale-105 hover:-translate-y-2"
                 data-testid="link-instagram"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 via-purple-500/5 to-pink-600/10 opacity-50"></div>
-                <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 via-purple-500/5 to-pink-600/10 opacity-50 pointer-events-none" aria-hidden="true"></div>
+                <div className="relative z-10 pointer-events-none">
                   <div className="text-pink-500 text-5xl mb-4">
                     <Instagram className="mx-auto drop-shadow-lg" />
                   </div>
@@ -286,11 +286,11 @@ export default function Home() {
                 href="https://tiktok.com/@sipn_bite.cr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="glass-effect rounded-2xl p-8 text-center hover-lift card-pulse relative overflow-hidden cursor-pointer block transition-all duration-300 hover:scale-105 hover:-translate-y-2"
+                className="glass-effect rounded-2xl p-8 text-center hover-lift relative overflow-hidden cursor-pointer block transition-all duration-300 hover:scale-105 hover:-translate-y-2"
                 data-testid="link-tiktok"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-pink-500/5 to-cyan-600/10 opacity-50"></div>
-                <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-pink-500/5 to-cyan-600/10 opacity-50 pointer-events-none" aria-hidden="true"></div>
+                <div className="relative z-10 pointer-events-none">
                   <div className="text-gray-900 text-5xl mb-4">
                     <SiTiktok className="mx-auto drop-shadow-lg" />
                   </div>
